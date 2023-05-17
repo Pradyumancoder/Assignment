@@ -1,0 +1,164 @@
+@import '../../app/mixins';
+
+$green-color: #00B686;
+
+.projectRecap{
+    margin: 5.5rem 1rem 1rem 1rem;
+    @include medium-breakpoint{
+        margin: 5.5rem 2rem 1rem 2rem;
+    }
+    
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .title{
+            font-weight: 700;
+            font-size: 1rem;
+            color: #233735;
+            margin-bottom: 0;
+
+             @include medium-breakpoint{
+               font-size: 1.25rem;
+            }
+
+            @include large-breakpoint{
+                font-size: 1.5rem
+            }
+        }
+    }
+}
+
+.mutalActionPlan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p{
+        font-weight: 400;
+        font-size: 0.6rem;
+        color: #7B8786;
+
+        @include medium-breakpoint{
+            font-size: 0.9rem;
+        }
+
+        @include large-breakpoint{
+            font-size: 1rem
+        }
+    }
+
+    span{
+        font-weight: 800;
+        font-size: 10px;
+        color: $green-color;
+
+        @include medium-breakpoint{
+            font-size: 0.9rem;
+        }
+
+        @include large-breakpoint{
+            font-size: 1.1rem
+        }
+    }
+}
+
+.scale{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-top: 0.5rem;
+
+    span{
+        width: 0.5rem;
+        height: 0.4rem;
+        background: #D3D7D7;
+
+        @include medium-breakpoint{
+        width: 0.6rem;
+        height: 0.5rem;
+    }
+    }
+
+    :first-child{
+        background: $green-color;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+    }
+
+    :last-child{
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+}
+
+.recapActions{
+    border-bottom: solid 1px #E9EBEB;
+    margin-top: 1.5rem;
+
+    @include medium-breakpoint{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+
+        @include medium-breakpoint{
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+    }
+        
+        button{
+            outline: none;
+            background: none;
+            border: solid 1px #BDC3C2;
+            border-top-right-radius: 0.5rem; 
+            border-top-left-radius: 0.5rem;
+            color: #657372;
+            padding: 0.5rem;
+            font-weight: 700;
+            font-size: 0.8rem;
+            white-space: nowrap;
+
+            @include medium-breakpoint{
+                padding: 0.7rem;
+                font-weight: 700;
+                font-size: 1rem;
+            }   
+        }
+
+        .activeBtn{
+            background: #fff;
+            color: $green-color;
+        }
+    }
+}
+
+.internalActions{
+    display: none;
+    
+    @include medium-breakpoint{
+        display: block;
+    }
+
+    button{
+        outline: none;
+        background: none;
+        border: solid 1px #BDC3C2;
+        border-top-right-radius: 0.5rem; 
+        border-top-left-radius: 0.5rem;
+        color: #657372;
+        padding: 0.7rem;
+        font-weight: 700;
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+}
