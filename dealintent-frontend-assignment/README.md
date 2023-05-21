@@ -1,6 +1,6 @@
 # Dealintent Assignment
 
-[Check the Live Version](https://dealintent.netlify.app/)
+[Check the Live Version](https://dealintent-assignment-main.vercel.app/)
 
 ### Run the repository locally
 
